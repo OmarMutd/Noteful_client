@@ -1,14 +1,8 @@
 {
-    "version": 2,
-  "name": "jason-noteful-app",
+  "version": 2,
+  "name": "noteful-front-end",
   "routes": [
-      {
-        "src": "^/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": ".*",
-        "dest": "/index.html"
-      }
+      { "handle": "filesystem" },
+      { "src": "/.*", "dest": "/index.html" }
   ]
 }
